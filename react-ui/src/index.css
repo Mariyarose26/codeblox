@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: #060606;
+}
+#navbar {
+  margin-left: 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+img {
+  max-height: 35px;
+}
+
+.output-pane {
+  height: 60vh;
+  display: flex;
+}
+
+.top-pane {
+  background-color: hsl(225, 6%, 25%);
+  height: 40vh;
+  display: flex;
+}
+
+.editor-container {
+  flex-grow: 1;
+  flex-basis: 0;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: #060606;
+}
+
+.editor-container.collapsed {
+  flex-grow: 0;
+}
+
+.editor-container.collapsed .CodeMirror-scroll {
+  position: absolute;
+  overflow: hidden !important;
+}
+
+.expand-collapse-btn {
+  margin-left: .5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.editor-title {
+  width: 95px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1D1E22;
+  color: white;
+  padding: .5rem .5rem .5rem 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16.5px;
+  color: rgb(170, 174, 188);
+}
+
+.CodeMirror {
+  height: 100% !important;
+  font-size:15px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Ubuntu Mono', monospace !important;
+}
+
+.code-mirror-wrapper {
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.CodeMirror-gutter {
+  background-color: #1D1E22;
+}
+
+.CodeMirror-scroll {
+  background-color: #1D1E22;
+}
+
+.CodeMirror-line {
+  font-family: 'Ubuntu Mono', monospace;
+}
